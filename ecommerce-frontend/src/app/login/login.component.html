@@ -1,0 +1,28 @@
+<div class="container mt-5">
+    <div class="card" style="padding: 20px;">
+        <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+
+            <mat-form-field appearance="outline" class="w-100">
+                <mat-label>Usuário</mat-label>
+                <input matInput
+                       placeholder="Usuário"
+                       ngModel
+                       name="userName"
+                       id="userName">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="w-100">
+                <mat-label>Senha</mat-label>
+                <input matInput
+                       placeholder="Senha"
+                       ngModel
+                       name="userPassword"
+                       id="userPassword"
+                       type="password">
+            </mat-form-field>
+
+            <button type="submit" mat-raised-button color="primary" class="w-100"> Entrar</button>
+
+        </form>
+    </div>
+</div>
