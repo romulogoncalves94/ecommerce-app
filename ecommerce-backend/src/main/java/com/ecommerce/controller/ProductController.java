@@ -13,7 +13,7 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
-    @PostMapping("/addNewProduct")
+    @PostMapping("/addNovoProduto")
     public Product addNewProduct(@RequestBody Product product) {
         return productService.addNewProduct(product);
     }

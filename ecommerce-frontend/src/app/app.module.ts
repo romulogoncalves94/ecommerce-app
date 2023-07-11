@@ -20,6 +20,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from "@angular/material/input";
+import {AddNovoProdutoComponent} from './add-novo-produto/add-novo-produto.component';
 
 @NgModule({
     declarations: [
@@ -29,7 +30,8 @@ import {MatInputModule} from "@angular/material/input";
         UserComponent,
         LoginComponent,
         HeaderComponent,
-        ForbiddenComponent
+        ForbiddenComponent,
+        AddNovoProdutoComponent
     ],
     imports: [
         BrowserModule,
