@@ -20,10 +20,9 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
-    @PostMapping(value = {"\"/addNovoProduto\""}, consumes = {MediaType.MULTIPART_FORM_DATA_VALUE})
+    @PostMapping(value = {"/addNewProduct"}, consumes = {MediaType.MULTIPART_FORM_DATA_VALUE})
     public Product addNewProduct(@RequestPart("product") Product product,
-                                 @RequestPart("imageFile") MultipartFile[] file) {
-
+                                 @RequestPart("imageFile")MultipartFile[] file) {
         try {
             Set<ImageModel> images = uploadImage(file);
             product.setProductImages(images);
